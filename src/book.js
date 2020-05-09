@@ -3,7 +3,7 @@ function createTitle(title) {
 };
 
 function buildMainCharacter(name, age, pronouns) {
-  var character ={
+  var character = {
     name: 'Vassya',
     age: 16,
     pronouns: 'she/her'
@@ -11,17 +11,17 @@ function buildMainCharacter(name, age, pronouns) {
   return character;
 };
 
-function saveReview(string, reviews) {
-  if (reviews.includes(string)) {
+function saveReview(review, reviews) {
+  if (reviews.includes(review)) {
     return reviews;
   } else {
-    return reviews.push(string)
+    return reviews.push(review);
   }
 };
 
 function calculatePageCount(bookTitle) {
   return bookTitle.length * 20;
-}
+};
 
 function writeBook(bookTitle, bookCharacter, genre) {
   var bookDetails = {
@@ -31,11 +31,11 @@ function writeBook(bookTitle, bookCharacter, genre) {
     genre: genre
   }
   return bookDetails;
-}
+};
 
 function editBook(book) {
   book.pageCount = book.pageCount * .75;
-}
+};
 
 module.exports = {
   createTitle: createTitle,
